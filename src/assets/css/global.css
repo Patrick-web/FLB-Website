@@ -1,0 +1,53 @@
+@font-face {
+	font-family: "roboto";
+	src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+	font-family: "roboto-thin";
+	src: url("../fonts/Roboto-Thin.ttf");
+}
+@font-face {
+	font-family: "roboto-thick";
+	src: url("../fonts/Roboto-Black.ttf");
+}
+@font-face {
+	font-family: "roboto-light";
+	src: url("../fonts/Roboto-Light.ttf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: roboto;
+	--accentColor: #0066ff;
+}
+a {
+	text-decoration: none;
+}
+body {
+	width: 100vw;
+	height: 100vw;
+	overflow: hidden;
+}
+button {
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+	outline: none;
+}
+.flexBetween {
+	display: flex;
+	justify-content: space-between;
+}
+.active_slide_6 {
+	background: rgb(241, 241, 241) !important;
+}
+.active_class_3 {
+	background: linear-gradient(45deg, #284854, #492e35) !important;
+}
+.active_class_4 {
+	background: linear-gradient(45deg, #4f4e4f, rgb(19, 19, 19)) !important;
+}
+/*  */
