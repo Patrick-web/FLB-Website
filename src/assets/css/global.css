@@ -41,6 +41,35 @@ button {
 	display: flex;
 	justify-content: space-between;
 }
+.loadingArea {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loadingIndicator {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+}
+.loadingIndicator:after {
+	content: " ";
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 8px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	border-color: #fff transparent #fff transparent;
+	animation: loadingIndicator 1.2s linear infinite;
+}
+@keyframes loadingIndicator {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
 .active_slide_6 {
 	background: rgb(241, 241, 241) !important;
 }
