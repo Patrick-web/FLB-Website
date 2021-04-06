@@ -42,7 +42,7 @@ export default {
       } else {
         this.currentPreview += 1;
       }
-    }, 2000);
+    }, 5000);
   },
 };
 </script>
