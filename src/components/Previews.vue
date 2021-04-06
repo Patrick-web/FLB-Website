@@ -2,28 +2,24 @@
   <div class="preview">
     <img id="laptop" src="@/assets/images/laptop.png" alt="" />
     <img
-      v-if="currentPreview == 0"
-      class="previewImg"
+      :class="[currentPreview == 0 ? 'visible' : '', 'previewImg']"
       src="@/assets/images/hometab.png"
-      alt=""
+      alt="Home Tab"
     />
     <img
-      v-if="currentPreview == 1"
-      class="previewImg"
+      :class="[currentPreview == 1 ? 'visible' : '', 'previewImg']"
       src="@/assets/images/albumsTab.png"
-      alt=""
+      alt="Albums Tab"
     />
     <img
-      v-if="currentPreview == 2"
-      class="previewImg"
+      :class="[currentPreview == 2 ? 'visible' : '', 'previewImg']"
       src="@/assets/images/artistTab.png"
-      alt=""
+      alt="Artist Tab"
     />
     <img
-      v-if="currentPreview == 3"
-      class="previewImg"
+      :class="[currentPreview == 3 ? 'visible' : '', 'previewImg']"
       src="@/assets/images/playlistTab.png"
-      alt=""
+      alt="Playlist Tab"
     />
   </div>
 </template>
@@ -42,7 +38,7 @@ export default {
       } else {
         this.currentPreview += 1;
       }
-    }, 5000);
+    }, 3000);
   },
 };
 </script>
@@ -63,6 +59,13 @@ export default {
     z-index: 3;
     width: 77%;
     margin-top: -15px;
+    opacity: 0;
+    display: none;
+    transition: 0.4s opacity;
+  }
+  .visible {
+    opacity: 1;
+    display: initial;
   }
   @media (max-width: 700px) {
     width: 90vw;
