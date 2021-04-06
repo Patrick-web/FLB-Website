@@ -32,7 +32,7 @@
         <a
           class="downloadButton animated fadeInUp delay-1s"
           title="Download FLB Music"
-          href="#"
+          href="https://github.com/Patrick-web/FLB-Music-Player-Official/releases/download/v1.0.0/FLB-Music-Setup-1.0.0.exe"
         >
           <img src="@/assets/images/windows.svg" alt="" />
           <p>Download</p>
