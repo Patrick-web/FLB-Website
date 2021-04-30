@@ -22,7 +22,7 @@
     </div>
     <a
       class="downloadButton"
-      href="https://github.com/Patrick-web/FLB-Music-Player-Official/releases/download/v1.0.4/FLB.Music.Setup.1.0.4.exe"
+      href="https://github.com/Patrick-web/FLB-Music-Player-Official/releases/download/v1.0.4/FLB-Music-Setup-1.0.4.exe"
     >
       <img src="@/assets/images/windows.svg" alt="" />
       <p>Download</p>
