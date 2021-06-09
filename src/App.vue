@@ -148,6 +148,7 @@ export default {
   background: rgba(255, 255, 255, 0.137);
   backdrop-filter: blur(10px);
   position: fixed;
+  z-index: 5;
   transform: translateX(-50%);
   bottom: 20px;
   left: 50%;
