@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <vue-particles :clickEffect="false" color="#dedede"></vue-particles>
+    <img src="@/assets/images/artists up-min.png" id="l_bg" alt="" />
     <div class="landing">
       <h1 class="hidden">FLB Music</h1>
       <div class="animated fadeInUp" id="headingTitle">
@@ -17,24 +19,32 @@
         <h4>In Music 🎶 though</h4>
       </div>
     </div>
-    <div class="previews">
-      <Previews />
+    <div class="flex downloadWrapper">
+      <h3>Download</h3>
+      <div class="btns">
+        <a
+          href="https://github.com/Patrick-web/FLB-Music-Player-Official/releases/download/v1.1.0/FLB-Music-Setup-1.1.0.exe"
+        >
+          <img src="@/assets/images/windows.svg" alt="" />
+          <p>Windows</p>
+        </a>
+        <a
+          href="https://github.com/Patrick-web/FLB-Music-Player-Official/releases/download/v1.1.0/FLB-Music-1.1.0.AppImage"
+        >
+          <img src="@/assets/images/linux.svg" alt="" />
+          <p>Linux</p>
+        </a>
+      </div>
     </div>
-    <a
-      class="downloadButton"
-      href="https://github.com/Patrick-web/FLB-Music-Player-Official/releases/download/v1.0.7/FLB-Music-Setup-1.0.7.exe"
-    >
-      <img src="@/assets/images/windows.svg" alt="" />
-      <p>Download</p>
-    </a>
+    <Fsection />
   </div>
 </template>
 
 <script>
-import Previews from "./components/Previews.vue";
+import Fsection from "./components/Fsection.vue";
 export default {
   name: "App",
-  components: { Previews },
+  components: { Fsection },
 };
 </script>
 
@@ -50,10 +60,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: white;
-  background: linear-gradient(306deg, #284854, #492e35) !important;
+  background: rgb(0, 0, 15);
   transition: 0.2s ease;
-  display: grid;
-  grid-template-columns: 2fr 3fr;
   @media (max-width: 700px) {
     display: flex;
     flex-direction: column;
@@ -108,10 +116,12 @@ export default {
 
 .landing {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: left;
+  padding-left: 40px;
   align-items: center;
-
+  height: 100vh;
+  position: relative;
+  z-index: 5;
   h3,
   h4 {
     text-align: left;
@@ -134,33 +144,50 @@ export default {
     }
   }
 }
-.downloadButton {
-  margin: auto;
-  margin-top: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  background: white;
-  padding: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-  border-radius: 2rem;
+.downloadWrapper {
+  background: rgba(255, 255, 255, 0.137);
+  backdrop-filter: blur(10px);
   position: fixed;
+  transform: translateX(-50%);
   bottom: 20px;
   left: 50%;
-  transform: translateX(-50%);
-  transition: 0.2s ease-in-out;
-  p {
-    color: var(--accentColor);
-    font-family: roboto-thick;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 20px;
+  gap: 10px;
+  h3 {
     font-size: 2rem;
   }
-  img {
-    width: 1.5rem;
-    margin-right: 10px;
+  .btns {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  &:hover {
-    border-radius: 1rem;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+    padding: 5px 15px;
+    border-radius: 2rem;
+    transition: 0.2s ease-in-out;
+    p {
+      color: var(--accentColor);
+      font-family: roboto-thick;
+      font-size: 1.4rem;
+    }
+    img {
+      width: 1.5rem;
+      margin-right: 10px;
+    }
+    &:hover {
+      border-radius: 1rem;
+    }
   }
   @media (max-width: 700px) {
     p {
@@ -178,5 +205,20 @@ export default {
   @media (max-width: 700px) {
     height: 60%;
   }
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#l_bg {
+  position: fixed;
+  top: 0;
+  width: 80%;
+  top: 50%;
+  filter: brightness(0.8);
+  right: 0%;
+  transform: translateX(50px) translateY(-50%);
 }
 </style>
