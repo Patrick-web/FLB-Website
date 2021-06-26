@@ -23,13 +23,13 @@
       <h3>Download</h3>
       <div class="btns">
         <a
-          href="https://github.com/Patrick-web/FLB-Music-Player-Official/releases/download/v1.1.0/FLB-Music-Setup-1.1.0.exe"
+          href="https://github.com/Patrick-web/FLB-Music-Player-Official/releases/download/v1.1.6/FLB-Music-Setup-1.1.6.exe"
         >
           <img src="@/assets/images/windows.svg" alt="" />
           <p>Windows</p>
         </a>
         <a
-          href="https://github.com/Patrick-web/FLB-Music-Player-Official/releases/download/v1.1.0/FLB-Music-1.1.0.AppImage"
+          href="https://github.com/Patrick-web/FLB-Music-Player-Official/releases/download/v1.1.6/FLB-Music-1.1.6.AppImage"
         >
           <img src="@/assets/images/linux.svg" alt="" />
           <p>Linux</p>
