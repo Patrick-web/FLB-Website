@@ -32,7 +32,19 @@
           href="https://github.com/Patrick-web/FLB-Music-Player-Official/releases/download/v1.1.6/FLB-Music-1.1.6.AppImage"
         >
           <img src="@/assets/images/linux.svg" alt="" />
-          <p>Linux</p>
+          <p>Linux AppImage</p>
+        </a>
+        <a
+          href="https://github.com/Patrick-web/FLB-Music-Player-Official/releases/download/v1.1.6/flbmusic_1.1.6_amd64.deb"
+        >
+          <img src="@/assets/images/linux.svg" alt="" />
+          <p>Linux (.deb)</p>
+        </a>
+                <a
+          href="https://github.com/Patrick-web/FLB-Music-Player-Official/releases/download/v1.1.6/flbmusic-1.1.6.x86_64.rpm"
+        >
+          <img src="@/assets/images/linux.svg" alt="" />
+          <p>Linux (.rpm)</p>
         </a>
       </div>
     </div>
