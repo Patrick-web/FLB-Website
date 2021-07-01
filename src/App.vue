@@ -226,10 +226,10 @@ export default {
 #l_bg {
   position: fixed;
   top: 0;
-  width: 80%;
+  width: 70vw;
   top: 50%;
   filter: brightness(0.8);
-  right: 0%;
-  transform: translateX(50px) translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 </style>
