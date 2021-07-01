@@ -32,31 +32,28 @@
           href="https://github.com/Patrick-web/FLB-Music-Player-Official/releases/download/v1.1.6/FLB-Music-1.1.6.AppImage"
         >
           <img src="@/assets/images/linux.svg" alt="" />
-          <p>Linux AppImage</p>
+          <p>AppImage</p>
         </a>
         <a
           href="https://github.com/Patrick-web/FLB-Music-Player-Official/releases/download/v1.1.6/flbmusic_1.1.6_amd64.deb"
         >
           <img src="@/assets/images/linux.svg" alt="" />
-          <p>Linux (.deb)</p>
+          <p>Debian</p>
         </a>
-                <a
+        <a
           href="https://github.com/Patrick-web/FLB-Music-Player-Official/releases/download/v1.1.6/flbmusic-1.1.6.x86_64.rpm"
         >
           <img src="@/assets/images/linux.svg" alt="" />
-          <p>Linux (.rpm)</p>
+          <p>rpm</p>
         </a>
       </div>
     </div>
-    <Fsection />
   </div>
 </template>
 
 <script>
-import Fsection from "./components/Fsection.vue";
 export default {
   name: "App",
-  components: { Fsection },
 };
 </script>
 
@@ -161,9 +158,9 @@ export default {
   backdrop-filter: blur(10px);
   position: fixed;
   z-index: 5;
-  transform: translateX(-50%);
+  // transform: translateX(-50%);
   bottom: 20px;
-  left: 50%;
+  right: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,6 +175,7 @@ export default {
     gap: 10px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -187,7 +185,7 @@ export default {
     justify-content: space-evenly;
     background: white;
     padding: 5px 15px;
-    border-radius: 2rem;
+    border-radius: 10px;
     transition: 0.2s ease-in-out;
     p {
       color: var(--accentColor);
