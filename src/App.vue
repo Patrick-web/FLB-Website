@@ -23,7 +23,7 @@
       <h3>Download</h3>
       <div class="btns">
         <a
-          href="https://github.com/FLB-Music/FLB-Music-Player/releases/download/v1.1.9/FLB.Music-1.1.9.exe"
+          href="https://github.com/FLB-Music/FLB-Music-Player/releases/download/v1.1.9/FLB.Music.Setup.1.1.9.exe"
         >
           <img src="@/assets/images/windows.svg" alt="" />
           <p>Windows</p>
